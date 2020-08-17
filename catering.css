@@ -1,0 +1,303 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+  	margin: auto;
+}
+
+.main {
+	margin-top: 30px;
+}
+
+@font-face {
+	font-family: myFirstFont;
+	src: url(Bodoni.ttc);
+}
+
+@font-face {
+	font-family: mySecondFont;
+	src: url(Geometria-Light.otf);
+}
+
+
+/* NAV BAR */
+
+nav {
+	overflow: hidden;
+	background-color: #fff;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 9;
+	box-shadow: 0px 3px 7px rgba(0, 0, 0, .3);
+}
+
+.nav-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 200px;
+	margin-right: 200px;
+	padding: 50px;
+	height: 25px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	text-align: center;
+	text-decoration: none;
+	color: #000000;
+	display: block;
+	padding: 19px;
+	font-family: mySecondFont;
+}
+
+li a:hover {
+	color: #d3d3d3;
+}
+
+nav h1 {
+	font-family: mySecondFont;
+	text-transform: uppercase;
+	font-size: 15px;
+}
+
+.main {
+}
+
+/*hero*/
+
+.hero-image {
+  background-image: url("PAL-170.jpg");
+  height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+/*grid*/
+
+.wrapper > div {
+	background: #fff;
+	padding: 1em;
+}
+
+.wrapper {
+	margin-top: 90px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 1em;
+	grid-row-gap: 1em;
+}
+
+.text-right {
+	margin: 9px 0px 24px 0px;
+	left: 457px;
+	text-align: left;
+	width: 524px;
+	align-self: start;
+}
+
+.text-left {
+	margin: 9px 0px 24px;
+	text-align: right;
+	width: 510px;
+}
+
+.text-right h2 {
+	font-size: 55px;
+	font-family: myFirstFont;
+}
+
+.text-left h2 {
+	font-size: 55px;
+	font-family: myFirstFont;
+}
+
+.text-right p {
+	font-size: 17px;
+	font-family: mySecondFont;
+}
+
+.text-left p {
+	font-size: 17px;
+	font-family: mySecondFont;
+	margin-bottom: 30px;
+}
+
+button {
+	border: solid 1px #000;
+	background-color: #fff;
+	padding: 15px;
+	font-size: 12px;
+	-webkit-transition-duration: 0.4s;
+  	transition-duration: 0.4s;
+}
+
+button:hover {
+	background-color: #000;
+}
+
+button:hover a {
+	color: white;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+.imagen {
+	width: 400px;
+}
+
+.imagen img {
+	width: 100%;
+	height: 100%;
+}
+
+.left-align {
+	justify-self: end;
+}
+
+.right-align {
+	justify-self: start;
+}
+
+/*parallax*/
+
+.parallax {
+	background: url(https://static.wixstatic.com/media/cd6911_c4c713d6a77742c1a20954b032698c72~mv2.png/v1/fill/w_1125,h_828,al_c,q_85/cd6911_c4c713d6a77742c1a20954b032698c72~mv2.webp)
+	repeat fixed 100%;
+}
+
+.parallax-inner {
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+
+
+/*formulario*/
+
+.contacto {
+	margin: 70px 0px 27px 0px;
+}
+.contacto h2 {
+	font-size: 75px;
+	text-align: center;
+	text-transform: uppercase;
+	margin: auto;
+	font-family: myFirstFont;
+}
+
+.info-contacto {
+	margin: 0px 0px 19px 0px;
+}
+
+.info-contacto p {
+	text-align: center;
+	font-size: 16px;
+	font-family: mySecondFont;
+}
+
+
+.consulta h5 {
+	text-align: center;
+	font-size: 20px;
+font-family: myFirstFont;
+
+}
+
+.formulario {
+	width: 520px;
+	margin: 0 auto;
+}
+
+input, textarea {
+	width: 100%;
+	border: 1px solid black;
+	margin-top: 5px;
+	padding: 4px 4px 4px 4px;
+	outline: none;
+}
+
+input[type=submit] {
+	background-color: black;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+	width: 10%;
+	padding: 3px 3px 3px 3px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	float: right;
+}
+
+input[name=mensaje] {
+	resize: none;
+	height: 150px;
+}
+
+/*hr*/
+
+hr {
+	width: 100%;
+	background-color: #d3d3d3;
+	height: 1px;
+	border: 0px;
+}
+
+/*footer*/
+.hashtag {
+	width: 258px;
+	margin: 38px auto 15px;
+}
+
+.hashtag p {
+	font-size: 30px;
+	text-align: center;
+	font-family: mySecondFont;
+	font-weight: 700;
+}
+
+.subir {
+	margin: 60px auto 20px;
+	display: block;
+    text-align: center;
+}
+
+
+
+.gotopbtn {
+	width: 50px;
+	height: 50px;
+	text-decoration: none;
+	text-align: center;
+	color: #000;
+	font-size: 20px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.info-contacto p {
+	text-align: center;
+	font-size: 16px;
+	font-family: mySecondFont;
+}
+
+.slider2 {
+	margin-top: 70px;
+}
